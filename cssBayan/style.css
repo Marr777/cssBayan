@@ -46,6 +46,10 @@ hr {
   list-style: none;
 }
 
+.meme__label {
+  cursor: pointer;
+}
+
 .meme__title-wrapper {
   display: flex;
   justify-content: space-between;
@@ -54,12 +58,11 @@ hr {
 
 .button-close__image {
   display: block;
-  width: 2rem;
-  height: 2rem;
+  width: 1.3rem;
+  height: 1.3rem;
   transform: rotate(45deg);
   transition: transform 0.1s ease-in;
 }
-
 
 .meme__title {
   font-size: 3em;
@@ -81,5 +84,28 @@ hr {
 }
 
 .meme-inner__image {
+  display: block;
   max-width: 100%;
+  margin: 0 auto;
+}
+
+/* tablet */
+@media (min-width: 820px) {
+  .page__body {
+    font-size: 1.5vw;
+  }
+
+  .bayan__title {
+    font-size: 4.5em;
+  }
+
+  .meme__title {
+    font-size: 2.6em;
+  }
+
+  .button-close__image {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
 }
