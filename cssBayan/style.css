@@ -32,6 +32,10 @@ hr {
   width: 70%;
 }
 
+.meme__input {
+  display: none;
+}
+
 .memes {
   width: 80%;
   margin: 0 auto;
@@ -53,6 +57,7 @@ hr {
   width: 2rem;
   height: 2rem;
   transform: rotate(45deg);
+  transition: transform 0.1s ease-in;
 }
 
 
@@ -61,19 +66,20 @@ hr {
 }
 
 .meme-inner {
-  display: none;
+  transform: scale(0);
+  width: 0;
+  transition: transform 0.4s ease-out, width 0.2s linear;
 }
 
 .meme__input:checked ~ .meme-inner {
-  display: block;
+  transform: scale(1);
+  width: 100%;
 }
 
-.meme__input {
-  display: none;
+.meme__input:checked ~ .meme__title-wrapper .button-close__image {
+  transform: rotate(0deg);
 }
 
 .meme-inner__image {
-  display: block;
-  margin: 0 auto;
   max-width: 100%;
 }
