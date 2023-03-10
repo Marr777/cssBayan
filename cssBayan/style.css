@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "PT Astra Sans";
+  src: url("fonts/pt-astra-sans.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+hr {
+  opacity: 0.5;
+}
+
+.page__body {
+  margin: 0;
+
+  font-family: "PT Astra Sans", arial, sans-serif;
+  font-size: 2vw;
+
+  background-color: #e6e0f67b;
+}
+
+.bayan__title {
+  width: fit-content;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 2%;
+
+  font-size: 5em;
+}
+
+.bayan__container {
+  width: 70%;
+}
+
+.memes {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 6%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.meme__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-close__image {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(45deg);
+}
+
+
+.meme__title {
+  font-size: 3em;
+}
+
+.meme-inner {
+  display: none;
+}
+
+.meme__input:checked ~ .meme-inner {
+  display: block;
+}
+
+.meme__input {
+  display: none;
+}
+
+.meme-inner__image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
