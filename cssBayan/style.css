@@ -41,7 +41,7 @@ hr {
 }
 
 .memes {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 2rem;
   padding: 0;
@@ -62,10 +62,10 @@ hr {
 
 .button-close__image {
   display: block;
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.6rem;
+  height: 1.6rem;
   transform: rotate(45deg);
-  transition: transform 0.1s ease-in, opacity 0.2s;
+  transition: transform 0.3s ease-in, opacity 0.2s;
 }
 
 .meme__title {
@@ -75,18 +75,19 @@ hr {
 .meme-inner {
   transform: scale(0);
   width: 0;
-  transition: transform 0.4s ease-out, width 0.2s linear;
+  transition: width 0.4s;
 }
+
 
 .meme__input:checked ~ .meme-inner {
   transform: scale(1);
   width: 100%;
+  transition: transform 0.8s ease-out;
 }
 
 .meme__input:checked ~ .meme__title-wrapper .button-close__image {
   transform: rotate(0deg);
 }
-
 
 .meme-inner__image {
   display: block;
@@ -98,6 +99,10 @@ hr {
 @media (min-width: 820px) {
   .page__body {
     font-size: 1rem;
+  }
+
+  .memes {
+    width: 60%;
   }
 
   .bayan__title {
@@ -164,6 +169,11 @@ hr {
   .meme__label:hover .meme-inner {
     transform: scale(1);
     width: 100%;
+    transition: transform 0.8s ease-out;
+  }
+
+  .meme__label:hover .meme__title-wrapper .button-close__image {
+    transform: rotate(0deg);
   }
 }
 
@@ -174,5 +184,11 @@ hr {
 
   .meme__label:active .meme__title-wrapper .meme__title {
     color: #2b24e3 !important;
+  }
+
+  .meme__input:checked ~ .meme-inner {
+    transform: scale(1);
+    width: 100%;
+    transition: transform 0.8s ease-out;
   }
 }
