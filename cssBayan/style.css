@@ -73,9 +73,10 @@ hr {
 }
 
 .meme-inner {
+  display: block;
   transform: scale(0);
   width: 0;
-  transition: width 0.4s;
+  transition: width 0.7s;
 }
 
 
