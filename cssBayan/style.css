@@ -153,6 +153,10 @@ hr {
   transition: opacity 0.3s;
 }
 
+.meme__label:active .meme__title-wrapper .button-close__image {
+  fill:  #2b24e3;
+}
+
 .meme__label:active .meme__title-wrapper .meme__title {
   color: #2b24e3 !important;
 }
