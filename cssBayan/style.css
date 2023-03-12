@@ -8,6 +8,7 @@
 
 hr {
   opacity: 0.5;
+  margin-top: 0.7rem;
 }
 
 .page {
@@ -70,6 +71,8 @@ hr {
 
 .meme__title {
   font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .meme-inner {
